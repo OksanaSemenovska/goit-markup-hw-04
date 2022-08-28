@@ -340,6 +340,10 @@ margin-top: 10px;
     background: var(--color-main-fone);
     padding-top: 60px;
     padding-bottom: 60px;
+    max-width: 1600px;
+    background-size: cover;
+    margin: auto;
+   
 }
 
 .contactfooter {
@@ -500,7 +504,7 @@ cursor: pointer;
 .social-list-icon {
     width:20px;
     height: 20px;
-    fill: #AFB1B8;
+    fill: currentColor;
 }
 
 
@@ -516,23 +520,23 @@ cursor: pointer;
     justify-content: center;
     width: 44px;
     height: 44px;
-    border-radius: 50%;
-    background-color: var(--primary-text-color-theme-blew);
+        color: #afb1b8;
+        cursor: pointer;
 }
 .social-list-link:hover,
 .social-list-link:focus {
-    background-color: #2196F3;
-}
-.social-list-link:hover .social-list-icon,
-.social-list-link:focus .social-list-icon {
-    fill: #FFFFFF;
-}
+
+        color: #FFFFFF;
+        background-color: #2196f3;
+        border-radius: 50%;
+    }
+
 
 
 .customers-list-icon {
     width: 106px;
     height: 60px;
-    fill:#AFB1B8;
+    fill:currentColor;
 }
 .customers-list {
     display: flex;
@@ -548,21 +552,13 @@ cursor: pointer;
         height: 92px;
         border: 1px solid #AFB1B8;
         border-radius: 4px;
-        fill: #188CE8;
-        
-    
+            color: #afb1b8;  
 }
 
 .customers-list-link:hover, 
-.ustomers-list-link:focus {
-    border: 1px solid #188CE8;}
-
-        .customers-list-link:hover .customers-list-icon,
-        .customers-list-link:focus .customers-list-icon {
-            fill: #2196F3;
-        }
-
-
+.сustomers-list-link:focus {
+    color: #2196f3;
+        border: 1px solid #2196f3;}
 
   .social-footer {
     display: flex;
@@ -575,18 +571,14 @@ cursor: pointer;
 
 .footer-list-link:hover,
 .footer-list-link:focus {
-    background-color: #2196F3;
+    background-color: #2196f3;
 }
 
-.footer-list-link:hover .footer-list-icon,
-.footer-list-link:focus .footer-list-icon {
-    fill: #FFFFFF;
-}
 
 .footer-list-icon {
     width: 20px;
     height: 20px;
-    fill: var(--primary-text-color-theme-blew);
+    fill: currentColor;
    
 }
 
@@ -600,11 +592,12 @@ cursor: pointer;
 
 .footer-list-link {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    background-color: #43444D;
-}
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        color: white;
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+        cursor: pointer;
+    }
