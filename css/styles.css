@@ -57,7 +57,6 @@ body {
     font-family: 'Roboto', sans-serif;
     letter-spacing: 0.03em;
     margin: auto;
-    width: 1600px;
 }
 
 .visually-hidden {
@@ -84,6 +83,8 @@ body {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero.jpg");
     background-size: cover;
+    max-width: 1600px;
+    margin: auto;
 }
 .ourfeatures {
     background: var(--fone-btn-section);
@@ -165,7 +166,11 @@ align-items: center;
         font-weight: 500;
         line-height: 1.1;
        color: var(--primary-text-color);
+      
     }
+.current {
+    color: #2196F3;
+}
 
 .menu-link:hover,
 .menu-link:focus {
@@ -189,6 +194,7 @@ font-family: var(--primary-font);
         display: flex;
         gap: 10px;
         fill: currentColor;
+        align-items: center;
        
 }
 .contact:hover,
@@ -253,7 +259,7 @@ background: var(--color-btn2);
         text-transform: uppercase;
     
         color: var(--primary-text-color);
-        padding-top: 30px;
+        margin-top: 30px;
        
 }
 
@@ -365,10 +371,9 @@ margin-top: 10px;
 .join {
     font-family: var(--primary-font);
         font-weight: 700;
-        line-height: 1.14px;
+        line-height: 1.14;
         text-transform: uppercase;
      color: #FFFFFF;
-     padding-top: 12px;
      margin-bottom: 20px;
    
 }
@@ -445,9 +450,6 @@ font-family: var(--primary-font);
 
 .card-interactive:hover,
 .card-interactive:focus {
- 
-        background: #FFFFFF;
-        border: 1px solid #EEEEEE;
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16); }
 
 
@@ -546,11 +548,14 @@ cursor: pointer;
         height: 92px;
         border: 1px solid #AFB1B8;
         border-radius: 4px;
+        fill: #188CE8;
+        
+    
 }
 
 .customers-list-link:hover, 
 .ustomers-list-link:focus {
-    background-color: var(--primary-text-color-theme-blew)}
+    border: 1px solid #188CE8;}
 
         .customers-list-link:hover .customers-list-icon,
         .customers-list-link:focus .customers-list-icon {
@@ -587,7 +592,9 @@ cursor: pointer;
 
 .footer-conteiner {
     display: flex;
+    align-items: baseline;
     gap: 70px;
+
     
 }
 
